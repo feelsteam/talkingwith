@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Style Property Basic</title>
+    <meta charset="utf-8">
+    <style>
+		<!--body {background-image:url('Desert.jpg');}-->
+		body {
+			background-image:url('BackgroundFront.png'),
+							 url('BackgroundBack.png');
+			background-size:100%;
+			background-color:#E7E7E8;
+			background-repeat:no-repeat;
+			background-attachment:fixed;
+			background-position:bottom;}
+		
+		p:nth-child(1) {background-color:red;}
+		p:nth-child(2) {font-size:100%; background-color:orange;}
+		p:nth-child(3) {font-size:150%; background-color:blue;}
+		p:nth-child(4) {font-size:200%; background-color:green;}
+	
+		* {font-size:12px;}
+		
+		h1 {font-size:3.0em; background-color:brown;}
+		h2 {font-size:1.5em; background-color:purple;}
+		
+		#box {
+			display:block; background-color:black; visibility:visible;
+			width:300px; height:50px; margin:10px; color:white;
+			opacity:0.2;}
+				
+		div {
+			width:100px; height:100px; background-color:red;
+			border:20px solid black; margin:10px; padding:30px;} 
+		
+		div:first-child {
+			background:red;
+			box-sizing:content-box;}
+
+		
+		.borderbox {
+			background-color:white;
+			border-width:thick;
+			border-style:dashed;
+			border-color:black;
+			border-radius:50px 40px 20px 10px;}
+			
+		.a {font-size:32px;}
+		.b {font-size:2em;}
+		.c {font-size:large;}
+		.d {font-size:small;}
+		.font_arial {font-family: Arial, sans-serif, serif}
+		.font_roman {font-family: 'Times New Roman'}
+		.font_big {font-size:2em}
+		.font_italic {font-style:italic}
+		.font_bold {font-weight:bold}
+		.font_center {text-align:center}
+		.font_right {text-align:right}
+		
+		.button {
+			width:70px;
+			height:20px;
+			background-color:#FF6A00;
+			border:10px solid #FFFFFF;
+			border-radius:30px;
+			box-shadow:5px 5px 5px #A9A9A9;}
+		.button > a {
+			display:block;
+			line-height:20px;}
+		
+		a {text-decoration:none}
+	</style>
+</head>
+
+<body>	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <h2>consectetur adipiscing elit. Sed nec purus elit, nec cursus dolor.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus elit, nec cursus dolor.</p>
+    
+    <div></div>
+    <div class="borderbox">Lorem ipsum dolor sit amet</div>
+    
+    <span>Dummy</span>
+    <div id="box">
+    	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    </div>
+    <span>Dummy</span>
+    
+      
+    
+    <h1>Lorem ipsum</h1>
+	<p class="a">Lorem ipsum</p>
+	<p class="b">Lorem ipsum</p>
+	<p class="c">Lorem ipsum</p>
+	<p class="d">Lorem ipsum</p>
+    
+	<h1 class="font_arial">Lorem ipsum</h1>
+	<p class="font_roman">Lorem ipsum</p>
+	<p class="font_big font_italic font_bold">Lorem ipsum dolor amet</p>
+    
+	<div class="button">
+    	<a href="#" class="font_big font_italic font_bold font_center">Click</a>
+    </div>
+    
+	<p class="font_big font_italic font_bold font_center">Lorem ipsum dolor amet</p>
+	<p class="font_bold font_right">2014.03.02</p>
+	<p>Lorem ipsum dolor amet, consectetur adipiscing elit. Pellentesque nec augue eget odio pellentesque vestibulum. Phasellus erat tellus, suscipit sed viverra sed, tempus ut urna. Donec vitae sem turpis, ac rhoncus lorem. Suspendisse lacus massa, interdum a faucibus vel, semper vel augue. Vivamus quis munc turpis. Nulla facilisi. Pellentesque vel massa a nisl mattis pellentesque ac porttitor urna. Aliquam erat volutpat. Curaitur molestie adipiscing mauris sed congue. Fusce sed felis eu purus venenatis sodales ut ac justo. Ut eu aliquam orci. Sed ornare blandit libero, nec gravida orci ornare in. Proin lectus sem, volutpat eget ullamcorper ut, lacinia a arcu.</p>
+
+</body>
+</html>
